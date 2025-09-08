@@ -1,76 +1,169 @@
 <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Taxidi – Group Travel Made Easy</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <style>
-          .fade-in {
-            opacity: 0;
-            animation: fadeIn 1.2s ease-out forwards;
-          }
-          @keyframes fadeIn {
-            to { opacity: 1; }
-          }
-        </style>
-      </head>
-      <body class="bg-gray-50 text-gray-800">
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 px-6 text-center fade-in">
-          <div class="max-w-3xl mx-auto">
-            <img src="logo.png" alt="Taxidi Logo" class="mx-auto mb-6 w-32 rounded-xl shadow-lg">
-            <h1 class="text-5xl font-extrabold mb-4">Welcome to Taxidi</h1>
-            <p class="text-lg mb-6">Your all-in-one solution for planning unforgettable group trips – tailored to your budget.</p>
-            <a href="#features" class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Explore Features</a>
-          </div>
-        </section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxidi – Group Travel Made Easy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Language Switcher -->
+  <div class="flex justify-end p-4">
+    <button id="lang-en" class="mx-1 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 font-semibold flex items-center">
+      <span class="mr-2">🇬🇧</span> EN
+    </button>
+    <button id="lang-fr" class="mx-1 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 font-semibold flex items-center">
+      <span class="mr-2">🇫🇷</span> FR
+    </button>
+  </div>
 
-        <!-- Features Section -->
-        <section id="features" class="py-20 px-6 fade-in">
-          <div class="max-w-5xl mx-auto text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Why Choose Taxidi?</h2>
-            <p class="text-lg text-gray-600">We make group travel planning seamless, budget-friendly, and fun.</p>
-          </div>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 px-6 text-center fade-in">
+    <div class="max-w-3xl mx-auto">
+      <img src="logo.png" alt="Taxidi Logo" class="mx-auto mb-6 w-32 rounded-xl shadow-lg">
+      <h1 id="hero-title" class="text-5xl font-extrabold mb-4">Welcome to Taxidi</h1>
+      <p id="hero-desc" class="text-lg mb-6">Your all-in-one solution for planning unforgettable group trips – tailored to your budget.</p>
+      <a id="hero-btn" href="#features" class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Explore Features</a>
+    </div>
+  </section>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Budget-Based Planning</h3>
-              <p class="text-gray-600">Set your group’s budget, and Taxidi automatically curates travel options within your price range.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Collaborative Trip Design</h3>
-              <p class="text-gray-600">Invite friends, vote on destinations, and plan every detail together in real time.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Smart Recommendations</h3>
-              <p class="text-gray-600">Get suggestions for flights, stays, and activities that fit your budget and preferences.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Expense Tracking</h3>
-              <p class="text-gray-600">Keep track of who owes what with built-in expense splitting tools.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Get the best deals</h3>
-              <p class="text-gray-600">Find and compare flights, hotels, and activities easily—then book with your preferred provider.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow p-6">
-              <h3 class="text-xl font-semibold mb-2">Itinerary Builder</h3>
-              <p class="text-gray-600">Organize your group’s activities into a clear, easy-to-follow travel plan.</p>
-            </div>
-          </div>
-        </section>
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6 fade-in">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h2 id="features-title" class="text-4xl font-bold mb-4">Why Choose Taxidi?</h2>
+      <p id="features-desc" class="text-lg text-gray-600">We make group travel planning seamless, budget-friendly, and fun.</p>
+    </div>
 
-        <!-- Call to Action -->
-        <section class="bg-orange-600 text-black py-20 px-6 text-center fade-in">
-          <h2 class="text-4xl font-bold mb-4">Ready to Plan Your Next Adventure?</h2>
-          <p class="text-lg mb-6">Download Taxidi and start organizing group trips that everyone will love.</p>
-          <a href="#" class="bg-white text-orange-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Get Started</a>
-        </section>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature1-title" class="text-xl font-semibold mb-2">Budget-Based Planning</h3>
+        <p id="feature1-desc" class="text-gray-600">Set your group’s budget, and Taxidi automatically curates travel options within your price range.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature2-title" class="text-xl font-semibold mb-2">Collaborative Trip Design</h3>
+        <p id="feature2-desc" class="text-gray-600">Invite friends, vote on destinations, and plan every detail together in real time.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature3-title" class="text-xl font-semibold mb-2">Smart Recommendations</h3>
+        <p id="feature3-desc" class="text-gray-600">Get suggestions for flights, stays, and activities that fit your budget and preferences.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature4-title" class="text-xl font-semibold mb-2">Expense Tracking</h3>
+        <p id="feature4-desc" class="text-gray-600">Keep track of who owes what with built-in expense splitting tools.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature5-title" class="text-xl font-semibold mb-2">Get the best deals</h3>
+        <p id="feature5-desc" class="text-gray-600">Find and compare flights, hotels, and activities easily—then book with your preferred provider.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h3 id="feature6-title" class="text-xl font-semibold mb-2">Itinerary Builder</h3>
+        <p id="feature6-desc" class="text-gray-600">Organize your group’s activities into a clear, easy-to-follow travel plan.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-gray-400 py-6 text-center fade-in">
-          <p>&copy; 2025 Taxidi. All rights reserved.</p>
-        </footer>
-      </body>
-      </html>
+  <!-- Call to Action -->
+  <section class="bg-orange-600 text-black py-20 px-6 text-center fade-in">
+    <h2 id="cta-title" class="text-4xl font-bold mb-4">Ready to Plan Your Next Adventure?</h2>
+    <p id="cta-desc" class="text-lg mb-6">Download Taxidi and start organizing group trips that everyone will love.</p>
+    <a id="cta-btn" href="#" class="bg-white text-orange-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Get Started</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center fade-in">
+    <p id="footer-text">&copy; 2025 Taxidi. All rights reserved.</p>
+  </footer>
+
+  <!-- Language Switcher Script -->
+  <script>
+    const translations = {
+      en: {
+        heroTitle: "Welcome to Taxidi",
+        heroDesc: "Your all-in-one solution for planning unforgettable group trips – tailored to your budget.",
+        heroBtn: "Explore Features",
+        featuresTitle: "Why Choose Taxidi?",
+        featuresDesc: "We make group travel planning seamless, budget-friendly, and fun.",
+        feature1Title: "Budget-Based Planning",
+        feature1Desc: "Set your group’s budget, and Taxidi automatically curates travel options within your price range.",
+        feature2Title: "Collaborative Trip Design",
+        feature2Desc: "Invite friends, vote on destinations, and plan every detail together in real time.",
+        feature3Title: "Smart Recommendations",
+        feature3Desc: "Get suggestions for flights, stays, and activities that fit your budget and preferences.",
+        feature4Title: "Expense Tracking",
+        feature4Desc: "Keep track of who owes what with built-in expense splitting tools.",
+        feature5Title: "Get the best deals",
+        feature5Desc: "Find and compare flights, hotels, and activities easily—then book with your preferred provider.",
+        feature6Title: "Itinerary Builder",
+        feature6Desc: "Organize your group’s activities into a clear, easy-to-follow travel plan.",
+        ctaTitle: "Ready to Plan Your Next Adventure?",
+        ctaDesc: "Download Taxidi and start organizing group trips that everyone will love.",
+        ctaBtn: "Get Started",
+        footerText: "&copy; 2025 Taxidi. All rights reserved."
+      },
+      fr: {
+        heroTitle: "Bienvenue sur Taxidi",
+        heroDesc: "Votre solution tout-en-un pour organiser des voyages de groupe inoubliables – adaptés à votre budget.",
+        heroBtn: "Découvrir les fonctionnalités",
+        featuresTitle: "Pourquoi choisir Taxidi ?",
+        featuresDesc: "Nous rendons la planification de voyages en groupe simple, économique et amusante.",
+        feature1Title: "Planification basée sur le budget",
+        feature1Desc: "Définissez le budget de votre groupe et Taxidi propose automatiquement des options de voyage adaptées.",
+        feature2Title: "Conception collaborative du voyage",
+        feature2Desc: "Invitez des amis, votez pour les destinations et planifiez chaque détail ensemble en temps réel.",
+        feature3Title: "Recommandations intelligentes",
+        feature3Desc: "Recevez des suggestions de vols, hébergements et activités selon votre budget et vos préférences.",
+        feature4Title: "Suivi des dépenses",
+        feature4Desc: "Suivez qui doit quoi grâce à des outils intégrés de partage des dépenses.",
+        feature5Title: "Obtenez les meilleures offres",
+        feature5Desc: "Comparez facilement vols, hôtels et activités, puis réservez avec votre fournisseur préféré.",
+        feature6Title: "Créateur d’itinéraire",
+        feature6Desc: "Organisez les activités de votre groupe dans un plan de voyage clair et facile à suivre.",
+        ctaTitle: "Prêt à planifier votre prochaine aventure ?",
+        ctaDesc: "Téléchargez Taxidi et commencez à organiser des voyages de groupe que tout le monde adorera.",
+        ctaBtn: "Commencer",
+        footerText: "&copy; 2025 Taxidi. Tous droits réservés."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById('hero-title').textContent = translations[lang].heroTitle;
+      document.getElementById('hero-desc').textContent = translations[lang].heroDesc;
+      document.getElementById('hero-btn').textContent = translations[lang].heroBtn;
+      document.getElementById('features-title').textContent = translations[lang].featuresTitle;
+      document.getElementById('features-desc').textContent = translations[lang].featuresDesc;
+      document.getElementById('feature1-title').textContent = translations[lang].feature1Title;
+      document.getElementById('feature1-desc').textContent = translations[lang].feature1Desc;
+      document.getElementById('feature2-title').textContent = translations[lang].feature2Title;
+      document.getElementById('feature2-desc').textContent = translations[lang].feature2Desc;
+      document.getElementById('feature3-title').textContent = translations[lang].feature3Title;
+      document.getElementById('feature3-desc').textContent = translations[lang].feature3Desc;
+      document.getElementById('feature4-title').textContent = translations[lang].feature4Title;
+      document.getElementById('feature4-desc').textContent = translations[lang].feature4Desc;
+      document.getElementById('feature5-title').textContent = translations[lang].feature5Title;
+      document.getElementById('feature5-desc').textContent = translations[lang].feature5Desc;
+      document.getElementById('feature6-title').textContent = translations[lang].feature6Title;
+      document.getElementById('feature6-desc').textContent = translations[lang].feature6Desc;
+      document.getElementById('cta-title').textContent = translations[lang].ctaTitle;
+      document.getElementById('cta-desc').textContent = translations[lang].ctaDesc;
+      document.getElementById('cta-btn').textContent = translations[lang].ctaBtn;
+      document.getElementById('footer-text').innerHTML = translations[lang].footerText;
+      document.documentElement.lang = lang;
+    }
+
+    document.getElementById('lang-en').onclick = () => setLanguage('en');
+    document.getElementById('lang-fr').onclick = () => setLanguage('fr');
+
+    // Set default language
+    setLanguage('en');
+  </script>
+</body>
+</html>
