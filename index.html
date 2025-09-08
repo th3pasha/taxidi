@@ -16,7 +16,6 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Language Switcher -->
   <div class="flex justify-end p-4">
     <button id="lang-en" class="mx-1 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 font-semibold flex items-center">
       <span class="mr-2">🇬🇧</span> EN
@@ -26,7 +25,6 @@
     </button>
   </div>
 
-  <!-- Hero Section -->
   <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 px-6 text-center fade-in">
     <div class="max-w-3xl mx-auto">
       <img src="logo.png" alt="Taxidi Logo" class="mx-auto mb-6 w-32 rounded-xl shadow-lg">
@@ -36,7 +34,6 @@
     </div>
   </section>
 
-  <!-- Features Section -->
   <section id="features" class="py-20 px-6 fade-in">
     <div class="max-w-5xl mx-auto text-center mb-12">
       <h2 id="features-title" class="text-4xl font-bold mb-4">Why Choose Taxidi?</h2>
@@ -68,22 +65,25 @@
         <h3 id="feature6-title" class="text-xl font-semibold mb-2">Itinerary Builder</h3>
         <p id="feature6-desc" class="text-gray-600">Organize your group’s activities into a clear, easy-to-follow travel plan.</p>
       </div>
+
+<!--      <div class="bg-white rounded-2xl shadow p-6">-->
+<!--        <h3 id="feature7-title" class="text-xl font-semibold mb-2">Gamified Travel Planning</h3>-->
+<!--        <p id="feature7-desc" class="text-gray-600">Enhance engagement by transforming your travel itinerary into an interactive, game-like experience.</p>-->
+<!--      </div>-->
+
     </div>
   </section>
 
-  <!-- Call to Action -->
   <section class="bg-orange-600 text-black py-20 px-6 text-center fade-in">
     <h2 id="cta-title" class="text-4xl font-bold mb-4">Ready to Plan Your Next Adventure?</h2>
     <p id="cta-desc" class="text-lg mb-6">Download Taxidi and start organizing group trips that everyone will love.</p>
     <a id="cta-btn" href="#" class="bg-white text-orange-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Get Started</a>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-6 text-center fade-in">
     <p id="footer-text">&copy; 2025 Taxidi. All rights reserved.</p>
   </footer>
 
-  <!-- Language Switcher Script -->
   <script>
     const translations = {
       en: {
@@ -162,7 +162,6 @@
     document.getElementById('lang-en').onclick = () => setLanguage('en');
     document.getElementById('lang-fr').onclick = () => setLanguage('fr');
 
-    // Set default language
     setLanguage('en');
   </script>
 </body>
